@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UploadData">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lavender_border"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update Data"
+                    android:textAlignment="center"
+                    android:textColor="@color/lavender"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/UpdateQtrNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/lavender_border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Qtr Number"
+                    android:padding="16dp"
+                    android:textColor="@color/lavender"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/UpdateEmployeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/lavender_border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Employee Name"
+                    android:padding="16dp"
+                    android:textColor="@color/lavender"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/UpdateDesignation"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/lavender_border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Designation"
+                    android:padding="16dp"
+                    android:textColor="@color/lavender"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/Updateneisno"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/lavender_border"
+                    android:gravity="start|center_vertical"
+                    android:hint="NEIS Number"
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:textColor="@color/lavender"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/Updateunit"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/lavender_border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Unit"
+                    android:padding="16dp"
+                    android:textColor="@color/lavender"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/UpdateLegal"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/lavender_border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Legal Other"
+                    android:padding="16dp"
+                    android:textColor="@color/lavender"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/UpdatephoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/lavender_border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:padding="16dp"
+                    android:textColor="@color/lavender"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/UpdateRemark"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/lavender_border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Remark"
+                    android:padding="16dp"
+                    android:textColor="@color/lavender"
+                    android:textColorHint="@color/black" />
+
+                <Button
+                    android:id="@+id/UpdateButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="update"
+                    android:text="Update"
+                    android:textSize="18sp"
+                    app:cornerRadius="20dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

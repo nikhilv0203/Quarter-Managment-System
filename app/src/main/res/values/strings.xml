@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CRCSD</string>
+
+    <!-- Password Requirements -->
+    <string name="password_requirements">Password must be at least 6 characters long, contain at least one special character (@#$%^+=), and must not include any spaces.</string>
+
+</resources>

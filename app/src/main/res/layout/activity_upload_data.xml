@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UploadData">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="@drawable/lavender_border">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Data"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/lavender"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/QtrNo"
+                    android:textColorHint="@color/black"
+                    android:background="@drawable/lavender_border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="Qtr Number"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/lavender"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/EmployeName"
+                    android:textColorHint="@color/black"
+                    android:background="@drawable/lavender_border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="Employee Name"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/lavender"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/Designation"
+                    android:textColorHint="@color/black"
+                    android:background="@drawable/lavender_border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="Designation"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/lavender"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/neisno"
+                    android:textColorHint="@color/black"
+                    android:background="@drawable/lavender_border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="NEIS Number"
+                    android:gravity="start|center_vertical"
+                    android:inputType="number"
+                    android:textColor="@color/lavender"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/unit"
+                    android:textColorHint="@color/black"
+                    android:background="@drawable/lavender_border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="Unit"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/lavender"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/other"
+                    android:textColorHint="@color/black"
+                    android:background="@drawable/lavender_border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="Legal Other"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/lavender"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/phoneNo"
+                    android:textColorHint="@color/black"
+                    android:background="@drawable/lavender_border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/lavender"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/Remark"
+                    android:textColorHint="@color/black"
+                    android:background="@drawable/lavender_border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="Remark"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/lavender"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Save"
+                    android:id="@+id/saveButton"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp"
+                    app:cornerRadius="20dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Import Data"
+                    android:id="@+id/importButton"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp"
+                    app:cornerRadius="20dp"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

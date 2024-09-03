@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/recRelativelayout"
+        android:layout_width="match_parent"
+        android:background="@drawable/lavender_border"
+        android:padding="2dp"
+        android:layout_height="wrap_content" >
+
+        <!-- QTR No -->
+        <TextView
+            android:id="@+id/QTRView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QTR NO:-"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/recQtr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/QTRView"
+            android:text="QTR NO"
+            android:textColor="@color/lavender"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/QTRView"/>
+
+        <!-- Employee Name -->
+        <TextView
+            android:id="@+id/EMPNView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee Name:-"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/QTRView"/>
+
+        <TextView
+            android:id="@+id/recEmpName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/EMPNView"
+            android:layout_below="@+id/recQtr"
+            android:text="Employee Name"
+            android:textColor="@color/lavender"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/EMPNView"/>
+
+        <!-- Designation -->
+        <TextView
+            android:id="@+id/DESIGView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Designation:-"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/EMPNView"/>
+
+        <TextView
+            android:id="@+id/recDesignation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/DESIGView"
+            android:layout_below="@+id/recEmpName"
+            android:text="Designation"
+            android:textColor="@color/lavender"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/DESIGView"/>
+
+        <!-- NEIS No -->
+        <TextView
+            android:id="@+id/NEISView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEIS No:-"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/DESIGView"/>
+
+        <TextView
+            android:id="@+id/recNEIS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/NEISView"
+            android:layout_below="@+id/recDesignation"
+            android:text="NEIS Number"
+            android:textColor="@color/lavender"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/NEISView"/>
+
+        <!-- Unit -->
+        <TextView
+            android:id="@+id/UNITView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit:-"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/NEISView"/>
+
+        <TextView
+            android:id="@+id/recUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/UNITView"
+            android:layout_below="@+id/recNEIS"
+            android:text="Unit"
+            android:textColor="@color/lavender"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/UNITView"/>
+
+        <!-- Legal or Illegal -->
+        <TextView
+            android:id="@+id/LEGLView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Legal or Illegal:-"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/UNITView"/>
+
+        <TextView
+            android:id="@+id/recLegal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/LEGLView"
+            android:layout_below="@+id/recUnit"
+            android:text="Legal"
+            android:textColor="@color/lavender"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/LEGLView"/>
+
+        <!-- Phone Number -->
+        <TextView
+            android:id="@+id/PHONEView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone No:-"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/LEGLView"/>
+
+        <TextView
+            android:id="@+id/recPhoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/PHONEView"
+            android:layout_below="@+id/recLegal"
+            android:text="Phone Number"
+            android:textColor="@color/lavender"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/PHONEView"/>
+
+        <!-- Remark -->
+        <TextView
+            android:id="@+id/REMARKView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remark:-"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/PHONEView"/>
+
+        <TextView
+            android:id="@+id/recRemark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/REMARKView"
+            android:layout_below="@+id/recPhoneNo"
+            android:text="Remark"
+            android:textColor="@color/lavender"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/REMARKView"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
